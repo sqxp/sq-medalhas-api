@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  sq-pessoas-api:
+    container_name: sq_pessoas_api
+    image: sqxp/sq-pessoas-api
+    ports:
+      - 8080:80
+    networks:
+      - sq_api_network
+  sq-medalhas-api:
+    container_name: sq_medalhas_api
+    image: sqxp/sq-medalhas-api
+    ports:
+      - 8081:80
+    networks:
+      - sq_api_network
+    depends_on:
+      - sq-pessoas-api
+networks:
+  sq_api_network:
+    driver: bridge
+    name: sq_api_network

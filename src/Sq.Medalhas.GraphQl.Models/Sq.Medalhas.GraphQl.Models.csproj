@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GraphQL" Version="2.4.0" />
+        <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
+        <PackageReference Include="GraphQL.Server.Ui.Playground" Version="3.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sq.Medalhas.Gateways.Models\Sq.Medalhas.Gateways.Models.csproj" />
+      <ProjectReference Include="..\Sq.Medalhas.Models\Sq.Medalhas.Models.csproj" />
+      <ProjectReference Include="..\Sq.Medalhas.Services.Abstractions\Sq.Medalhas.Services.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Mutations\**" />
+      <Compile Remove="InputTypes\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Mutations\**" />
+      <EmbeddedResource Remove="InputTypes\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Mutations\**" />
+      <None Remove="InputTypes\**" />
+    </ItemGroup>
+
+</Project>

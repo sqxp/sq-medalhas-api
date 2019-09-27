@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "Sq.Medalhas.Api": {
+      "commandName": "Project",
+      "launchUrl": "ui/playground",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:6001;http://localhost:6000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

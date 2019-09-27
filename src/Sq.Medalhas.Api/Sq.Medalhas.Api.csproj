@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Sq.Medalhas.GraphQl.Models\Sq.Medalhas.GraphQl.Models.csproj" />
+        <ProjectReference Include="..\Sq.Medalhas.Services.Abstractions\Sq.Medalhas.Services.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>
